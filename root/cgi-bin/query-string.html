@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query String Test</title>
+</head>
+<body>
+    <h1>Send data</h1>
+    <form action="/cgi-bin/receive_data.py" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

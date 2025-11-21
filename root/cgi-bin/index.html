@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>Let's dive into CGI!</h1>
+		<h4>CGI (Common Gateway Interface) is a protocol that allows web servers to execute scripts to process dynamic requests. It is used to generate dynamic content and interact with users through HTTP-based operations.</h4>
+		<p><a href="/cgi-bin/cgi-time.py">Example of a GET CGI script that provides the current time.</a></p>
+		<p><a href="/cgi-bin/sleep.py">Example of a GET CGI script that sleeps for a few minutes to test whether the server can handle other requests without blocking while running CGI scripts.</a></p>
+		<p><a href="/cgi-bin/query-string.html">Example of a GET CGI script that receive data from query string.</a></p>
+		
+		<p>For POST request, you test it by sending a file through the terminal using the following command:</p>
+		<code>curl -X POST --data-binary @path/to/file localhost:1234/cgi-bin/post.py</code>
+		<p>You can try to send it in chunks (in case you defined in the configs max body size to be smaller than the file you want to send) by adding the following flag to the above command:</p>
+		<code>-H "Transfer-Encoding: chunked"</code>
+		<p><a href="/html/index.html">Back to main page</a></p>
+	</body>
+</html>

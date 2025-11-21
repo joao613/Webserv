@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<h1>POST test</h1>
+		<p>Our server does not support POST requests sent via multipart form-data!</p>
+		<p>However, you can still test it by sending a file through the terminal using the following command:</p>
+		<code>curl -X POST --data-binary @path/to/file localhost:1234/path/to/endpoint</code>
+		<p>You can try to send it in chunks (in case you defined in the configs max body size to be smaller than the file you want to send) by adding the following flag to the above command:</p>
+		<code>-H "Transfer-Encoding: chunked"</code>
+		<p><a href="/html/index.html">Go back to main page</a></p>
+	</body>
+</html>
