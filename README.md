@@ -5,5 +5,5 @@ Nginx-inspired webserver written in C. Includes features such as:
 - GET, POST and DELETE methods, allowing navigation through an html website and upload/download/deletion of files.
 - CGI, allowing to run python scripts.
 
-### Acknowledgements
+## Acknowledgements
 This project was made in collaboration with [Nuno Sousa](https://github.com/SomeMedtnerGuy) e [Nicole Oliveira](https://github.com/nicoleoliveiraa).
